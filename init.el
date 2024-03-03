@@ -1,6 +1,8 @@
 (tool-bar-mode -1)
 (setq package-enable-at-startup t)
 (setq lexical-binding t)
+(global-display-line-numbers-mode t)
+
 (require 'package)
 (setq package-archives
       '(("gnu-elpa" . "https://elpa.gnu.org/packages/")
@@ -156,6 +158,10 @@
 
 (use-package magit
   :ensure t)
+
+
+;; ======================= DEFAULT INJECTIONS ==============================
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
